@@ -1,0 +1,132 @@
+{
+    "name": "d5-tut/simple-quick-module",
+    "d4Shortcode": "d5_tut_simple_quick_module",
+    "title": "Simple Quick Module",
+    "titles": "Simple Quick Modules",
+    "category": "module",
+    "moduleClassName": "d5_tut_simple_quick_module",
+    "moduleOrderClassName": "d5_tut_simple_quick_module",
+    "attributes": {
+      "module": {
+        "type": "object",
+        "selector": "{{selector}}",
+        "default": {
+          "meta": {
+            "adminLabel": {
+              "desktop": {
+                "value": "Simple Quick Module"
+              }
+            }
+          }
+        },
+        "settings": {
+          "meta": {
+            "adminLabel": {}
+          },
+          "decoration": {
+            "background": {},
+            "sizing": {},
+            "spacing": {},
+            "border": {},
+            "boxShadow": {},
+            "filters": {},
+            "transform": {},
+            "animation": {},
+            "overflow": {},
+            "disabledOn": {},
+            "transition": {},
+            "position": {},
+            "zIndex": {},
+            "scroll": {},
+            "sticky": {}
+          }
+        }
+      },
+      "title": {
+        "type": "object",
+        "selector": "{{selector}} .d5_tut_simple_quick_module_title",
+        "attributes": {
+          "class": "d5_tut_simple_quick_module_title"
+        },
+        "tagName": "h2",
+        "inlineEditor": "plainText",
+        "elementType": "heading",
+        "childrenSanitizer": "et_core_esc_previously",
+        "settings": {
+          "innerContent": {
+            "groupType": "group-item",
+            "item": {
+              "groupName": "mainContent",
+              "priority": 10,
+              "render": true,
+              "attrName": "title.innerContent",
+              "label": "Title",
+              "description": "Title",
+              "features": {
+                "dynamicContent": false
+              },
+              "component": {
+                "name": "divi/text",
+                "type": "field"
+              }
+            }
+          },
+          "decoration": {
+            "font": {
+              "priority": 10,
+              "component": {
+                "props": {
+                  "groupLabel": "Title Font",
+                  "fieldLabel": "",
+                  "fields": {
+                    "headingLevel": {
+                      "render": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "content": {
+        "type": "object",
+        "selector": "{{selector}} .d5_tut_simple_quick_module_content",
+        "attributes": {
+          "class": "d5_tut_simple_quick_module_content"
+        },
+        "tagName": "div",
+        "inlineEditor": "richText",
+        "childrenSanitizer": "et_core_esc_previously",
+        "allowHtml": true,
+        "settings": {
+          "innerContent": {
+            "groupType": "group-item",
+            "item": {
+              "groupName": "mainContent",
+              "priority": 20,
+              "render": true,
+              "attrName": "content.innerContent",
+              "label": "Content",
+              "description": "Content",
+              "features": {
+                "dynamicContent": false
+              },
+              "component": {
+                "name": "divi/richtext",
+                "type": "field"
+              }
+            }
+          },
+          "decoration": {
+            "bodyFont": {}
+          }
+        }
+      }
+    },
+    "settings": {
+      "content": "auto",
+      "design": "auto",
+      "advanced": "auto"
+    }
+  }
